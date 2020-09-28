@@ -1,7 +1,6 @@
 package ascii32
 
 import (
-	"log"
 	"strings"
 )
 
@@ -33,7 +32,7 @@ func Tokenize(s string) []Tok {
 	var z []Tok
 	for {
 		t := o.Next()
-		log.Printf("NEXT ----> %v", t)
+		// log.Printf("NEXT ----> %v", t)
 		z = append(z, t)
 		if t.Type == TokEOF {
 			break

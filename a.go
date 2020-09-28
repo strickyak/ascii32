@@ -64,9 +64,9 @@ func (o *A__) RunProgram(s string) {
 	tt := Tokenize(s)
 
 	// Debug tokenizer:
-	for i, t := range tt {
-		log.Printf("Tok[%d] = %v", i, t)
-	}
+	// for i, t := range tt {
+	// log.Printf("Tok[%d] = %v", i, t)
+	// }
 
 	for i, t := range tt {
 		log.Printf("Step[%d]: %v", i, t)
